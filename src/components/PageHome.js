@@ -1,10 +1,12 @@
 import React from 'react';
-import Main from './Main'
+import FormThread from './FormThread';
+import Main from './Main';
 
 const PageHome = () => {
     return(
         <Main>
             <h1>{'Home'}</h1>
+            <FormThread />
         </Main>
     );
 }
