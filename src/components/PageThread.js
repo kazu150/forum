@@ -1,7 +1,12 @@
 import React from 'react';
+import Main from './Main';
 
 const PageThread = () => {
-return <h1>{'Thread'}</h1>;
-}
+    return (
+        <Main>
+            <h1>{'Thread'}</h1>
+        </Main>
+    );
+};
 
 export default PageThread;
