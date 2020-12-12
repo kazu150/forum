@@ -2,7 +2,6 @@ import { Button, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React, { useState } from 'react';
 import { useCreateThread } from '../helpers/useCreateThread';
-import { useStyles } from './Main'
 
 const FormThread = () => {
     const classes = useStyles();
@@ -66,7 +65,7 @@ const FormThread = () => {
     );
 };
 
-const userStyle = makeStyles(({spacing}) => {
+const useStyles = makeStyles(({spacing}) => {
     return {
         actions: {display: 'grid', justifyContent: 'flex-end'},
         form: {display: 'grid', gridRowGap: spacing(2) }

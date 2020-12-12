@@ -7,7 +7,7 @@ const Main = ({ children }) => {
     return <main className={classes.root}>{children}</main>
 };
 
-export const useStyles = makeStyles(({ breakpoints, spacing }) => {
+const useStyles = makeStyles(({ breakpoints, spacing }) => {
     return {
         root: {
             display: 'grid',
