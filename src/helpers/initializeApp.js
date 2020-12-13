@@ -1,7 +1,7 @@
-import { firestore, initializeApp } from 'firebase/app';
+import Firebase from 'firebase/app';
 import 'firebase/firestore';
 
-initializeApp({
+Firebase.initializeApp({
     apiKey: "AIzaSyDSRvDFcXNWxUlVhAiOujVl--GqFDOAfY4",
     authDomain: "forum-9bf75.firebaseapp.com",
     projectId: "forum-9bf75",

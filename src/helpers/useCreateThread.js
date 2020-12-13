@@ -1,4 +1,4 @@
-import { firestore } from 'firebase/app';
+import Firebase from 'firebase/app';
 import { useState } from 'react';
 
 export const useCreateThread = () => {
@@ -9,9 +9,9 @@ export const useCreateThread = () => {
 
         setLoading(true);
 
-        const now = firestore.Timestamp.now();
+        const now = Firebase.firestore.Timestamp.now();
 
-        const threadRef = firestore().collection('threads').doc();
+        const threadRef = Firebase.firestore().collection('threads').doc();
 
         await threadRef.set({
             createdAt: now,
