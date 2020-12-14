@@ -25,7 +25,7 @@ const FormThread = () => {
                 fullWidth
                 onChange={(event) => setTitle(event.target.value)}
                 placeholder={'New thread'}
-                value={'title'}
+                value={title}
                 variant={'outlined'}
             />
             {title && (
