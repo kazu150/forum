@@ -1,4 +1,4 @@
-import { firestore } from 'firebase/app';
+import Firebase from 'firebase/app';
 import { useState } from 'react';
 
 export const useCreateResponse = () => {
@@ -9,12 +9,12 @@ export const useCreateResponse = () => {
 
         setLoading(true);
 
-        const now = firestore.Timestamp.now();
+        const now = Firebase.firestore.Timestamp.now();
 
-        const threadRef = firestore().collection('threads').doc(threadId);
+        const threadRef = Firebase.firestore().collection('threads').doc(threadId);
 
         await threadRef.update({
-            responseCount: firestore.FieldValue.increment(1),
+            responseCount: Firebase.firestore.FieldValue.increment(1),
             updatedAt: now,
         });
 
