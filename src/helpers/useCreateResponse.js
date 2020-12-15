@@ -4,7 +4,7 @@ import { useState } from 'react';
 export const useCreateResponse = () => {
     const [loading, setLoading] = useState(false);
 
-    const createResponse = async ({ text, threadId, usename }) => {
+    const createResponse = async ({ text, threadId, username }) => {
         if(loading) return;
 
         setLoading(true);
@@ -25,7 +25,7 @@ export const useCreateResponse = () => {
             updatedAt: now,
             text,
             threadId,
-            usename,
+            username,
         });
 
         setLoading(false);
