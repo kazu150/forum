@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <AppBar color={'default'} position={'sticky'}>
+        <AppBar color={'primary'} position={'sticky'}>
             <Toolbar>
                 <Typography color={'inherit'} component={Link} to={'/'} variant={'h5'}>
                     {'Forum'}

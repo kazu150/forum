@@ -1,4 +1,5 @@
 import { createMuiTheme, CssBaseline } from '@material-ui/core';
+import { blue } from '@material-ui/core/colors';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -8,7 +9,11 @@ import PageNotFound from './components/PageNotFound';
 import PageThread from './components/PageThread';
 
 const App = () => {
-  const theme = createMuiTheme();
+  const theme = createMuiTheme({
+    palette: {
+      primary: blue,
+    }
+  });
 
   return(
     <ThemeProvider theme={theme}>
